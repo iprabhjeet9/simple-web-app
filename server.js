@@ -6,6 +6,12 @@ app.get('/', function (req, res) {
     res.send('Hello There !! hostname: '+ os.hostname() +"\n ip: "+ip.address());
 
 });
+
+app.get('/about', function (req, res) {
+    res.send('this is my website');
+
+});
+
 app.listen(3000, function () {
     console.log('Listening on port 3000!');
     console.log(' http://localhost:3000');
